@@ -16,6 +16,8 @@ module.exports = function(app){
             .post(jsonku.tambahMahasiswa);
         app.route('/ubah')
             .put(jsonku.ubahMahasiswa);
-            app.route('/hapus')
+        app.route('/hapus')
             .delete(jsonku.hapusMahasiswa);
+        app.route('/tampilmatakuliah')
+            .get(jsonku.tampilgroupmatakuliah);
         }
